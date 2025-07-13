@@ -40,22 +40,39 @@ FoodOrderingSystem/
 
 
 
+
+---
+
+
 ---
 
 ## ▶️ How to Run
 
-### 🖥️ Compile & Run from Terminal
 
-```bash
-javac *.java
-java Main```
+javac -d bin src/**/*.java
+java -cp bin Main      
 
 
-🧪 Sample Output
-text
-Copy
-Edit
-=== Welcome to Food Express ===
+#tables:
+CREATE TABLE food_items (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+
+🔸 Sample Data Insert:
+
+INSERT INTO food_items (name, price) VALUES 
+('Burger', 99.00),
+('Pizza', 199.00),
+('Fries', 49.00),
+('Cold Drink', 30.00),
+('Sandwich', 79.00);
+
+
+## 🧪 Sample Output
+=== Welcome to Food Ordering System ===
+
 1. View Menu
 2. Place Order
 3. View Bill
@@ -64,13 +81,13 @@ Edit
 
 Enter your choice: 1
 
--- Menu --
-1. Burger - ₹99
-2. Pizza - ₹199
-3. Fries - ₹49
+--- MENU ---
+1. Burger - ₹99.0
+2. Pizza - ₹199.0
+3. Fries - ₹49.0
 
 
-👩‍💻 Author
+**👩‍💻 Author**
 Pranita Pandurang Khendkar
 📧 khendkarpranita@gmail.com
 🌐 GitHub: PanitaK19
