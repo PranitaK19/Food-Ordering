@@ -25,7 +25,7 @@ A simple **console-based food ordering system** developed in Java using **Core J
 ---
 
 ## 🗂️ Project Structure
-
+```bash
 FoodOrderingSystem/
 ├── src/
 │   ├── Main.java                  # Entry point
@@ -37,7 +37,7 @@ FoodOrderingSystem/
 │   └── util/
 │       └── MenuUtil.java          # Static menu setup
 ├── README.md
-
+```
 
 
 
@@ -48,27 +48,28 @@ FoodOrderingSystem/
 
 ## ▶️ How to Run
 
-
+```bash
 javac -d bin src/**/*.java
-java -cp bin Main      
+java -cp bin Main
+```
 
-
-#tables:
+## Tables:
+```bash
 CREATE TABLE food_items (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     price DECIMAL(10, 2) NOT NULL
 );
-
-🔸 Sample Data Insert:
-
+```
+**🔸 Sample Data Insert:**  
+```bash
 INSERT INTO food_items (name, price) VALUES 
 ('Burger', 99.00),
 ('Pizza', 199.00),
 ('Fries', 49.00),
 ('Cold Drink', 30.00),
 ('Sandwich', 79.00);
-
+```
 
 ## 🧪 Sample Output
 === Welcome to Food Ordering System ===
@@ -87,8 +88,8 @@ Enter your choice: 1
 3. Fries - ₹49.0
 
 
-**👩‍💻 Author**
-Pranita Pandurang Khendkar
-📧 khendkarpranita@gmail.com
-🌐 GitHub: PanitaK19
+## **👩‍💻 Author**
+Pranita Pandurang Khendkar  
+📧 khendkarpranita@gmail.com  
+🌐 GitHub: PanitaK19  
 
